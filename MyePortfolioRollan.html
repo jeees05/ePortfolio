@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelhoney A. Rollan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <style>
+        .project-card:hover {
+            transform: scale(1.02);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-pink-400 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <img src="c:\Users\ASUS\Pictures\photo_2024-09-28_20-11-54.jpg" alt="Me" class="rounded-full w-40 h-40 object-cover">
+                <div class="mt-6 md:mt-0 md:ml-8 text-center md:text-left">
+                    <h1 class="text-3xl font-bold">Hi! I'm Jelhoney A. Rollan 👋</h1>
+                    <p class="mt-2">A 3rd-year Computer Science student, hoping to learn and uncover new possibilities. </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Me -->
+    <section class="py-12 px-6">
+        <div class="container mx-auto max-w-3xl">
+            <h2 class="text-2xl font-bold mb-4">About Me</h2>
+            <div class="bg-white p-6 rounded-lg shadow">
+                <p>I'm currently exploring the world of computer science! I have only done simple projects so far, but I am excited to tackle interesting task as I continue to learn and grow in the field. 😊</p>
+                <div class="mt-4">
+                    <p class="font-bold mb-2">Learning:</p>
+                    <p>HTML CSS JavaScript</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="py-12 px-6 bg-gray-50">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-2xl font-bold mb-6">My Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="project-card bg-white rounded-lg shadow overflow-hidden">
+                    <img src="c:\Users\ASUS\Downloads\abstract-background-1024x273.jpg" alt="Rollan Project" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold">Rollan Project</h3>
+                        <p class="text-gray-600 text-sm mt-1">Using HTML in Laravel</p>
+                        <a href="https://github.com/jeees05/Rollan_project" class="text-pink-500 text-sm mt-2 inline-block">See on GitHub →</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card bg-white rounded-lg shadow overflow-hidden">
+                    <img src="c:\Users\ASUS\Downloads\photo_2024-12-19_12-42-48.jpg" alt="HTML Layout" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold">Basic HTML Layout</h3>
+                        <p class="text-gray-600 text-sm mt-1">A basic HTML structure and layout.</p>
+                        <a href="https://github.com/jeees05/ass-1-basic-html-layout" class="text-pink-500 text-sm mt-2 inline-block">See on GitHub →</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card bg-white rounded-lg shadow overflow-hidden">
+                    <img src="c:\Users\ASUS\Downloads\simple-calculator-vector-illustration-isolated-white-background-icon-colorful-design-237585721.webp" alt="Calculator" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold">Simple Calculator</h3>
+                        <p class="text-gray-600 text-sm mt-1">A Simple Calculator that can calculate addition, subtraction, multiplication, and division.</p>
+                        <a href="https://github.com/jeees05/Simple-Calculator" class="text-pink-500 text-sm mt-2 inline-block">See on GitHub →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="py-12 px-6">
+        <div class="container mx-auto max-w-2xl">
+            <h2 class="text-2xl font-bold mb-6">Message or Question? </h2>
+            <div class="bg-pink-100 p-6 rounded-lg shadow">
+                <form id="contactForm">
+                    <div class="mb-4">
+                        <label class="block mb-2">Your Name</label>
+                        <input type="text" class="w-full p-2 border rounded" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block mb-2">Your Email</label>
+                        <input type="email" class="w-full p-2 border rounded" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block mb-2">Message</label>
+                        <textarea class="w-full p-2 border rounded" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-pink-400 text-white px-6 py-2 rounded hover:bg-pink-500">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Footer -->
+    <footer class="text-center py-6 text-black-600">
+        <p>2024 © Jelhoney A. Rollan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thanks for your message! 😊');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
